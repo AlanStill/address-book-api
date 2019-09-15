@@ -32,6 +32,7 @@ public class CustomerControllerTest
         mockMvc.perform(get(input))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.surname").value(surname))
+                .andExpect(jsonPath("$.email").value("j@smith.com"))
                 .andExpect(header().string("Content-Type", MediaType.APPLICATION_JSON_UTF8_VALUE));
     }
 }
