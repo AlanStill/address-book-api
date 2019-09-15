@@ -32,7 +32,7 @@ public class DefaultCustomerLookupService implements CustomerLookupService
             return null;
         }
 
-        final List<CustomerModel> customers = repository.findAllBySurname(surname);
+        final List<CustomerModel> customers = repository.findAllBySurnameIgnoreCase(surname);
 
         return customers.stream()
                 .map(c -> mapper.map(c))

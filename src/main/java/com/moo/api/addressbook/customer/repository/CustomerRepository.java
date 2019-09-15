@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface CustomerRepository extends CrudRepository<CustomerModel, Long>
 {
-    List<CustomerModel> findAllBySurname(String surname);
+    List<CustomerModel> findAllBySurnameIgnoreCase(final String surname);
 }
