@@ -33,6 +33,7 @@ public class CustomerControllerTest
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.surname").value(surname))
                 .andExpect(jsonPath("$.email").value("j@smith.com"))
+                .andExpect(jsonPath("$.address").value("10 Main Street,London,QW1 ER4,United Kingdom"))
                 .andExpect(header().string("Content-Type", MediaType.APPLICATION_JSON_UTF8_VALUE));
     }
 }

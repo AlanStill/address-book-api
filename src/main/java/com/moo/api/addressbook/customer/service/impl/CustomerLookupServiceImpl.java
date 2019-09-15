@@ -34,7 +34,6 @@ public class CustomerLookupServiceImpl implements CustomerLookupService
 
         final AddressModel address = new AddressModel();
         address.setLine1("10 Main Street");
-        address.setLine2("");
         address.setPostcode("QW1 ER4");
         address.setCity("London");
         address.setCountry("United Kingdom");
