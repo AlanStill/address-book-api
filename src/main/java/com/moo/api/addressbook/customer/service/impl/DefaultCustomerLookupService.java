@@ -1,6 +1,5 @@
 package com.moo.api.addressbook.customer.service.impl;
 
-import com.moo.api.addressbook.address.domain.AddressModel;
 import com.moo.api.addressbook.customer.domain.CustomerModel;
 import com.moo.api.addressbook.customer.dto.CustomerDto;
 import com.moo.api.addressbook.customer.mapper.Customer2DtoMapper;
